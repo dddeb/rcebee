@@ -65,9 +65,10 @@ So I add the line:
 ```python
 new_string = numbers[0].replace(numbers[1], numbers[2])
 ```
+<img width="600px" src="img/Replacement05.png">  
   
 As the final step, I just comment out any testing scripts, so only the answer itself is printed:  
-<img width="600px" src="img/Replacement05.png">  
+<img width="600px" src="img/Replacement06.png">  
     
 Got the flag! :)  
   
