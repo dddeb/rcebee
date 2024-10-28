@@ -1,4 +1,5 @@
-<img alt="Challenge thumbnail" width="300px" src="/img/Replacement01.png">  
+<img alt="Challenge thumbnail" width="300px" src="img/Replacement01.png">  
+
 ## **Challenge Name & Description**  
 Replacement  
 A cursed spell has altered a scroll, changing key letters. Replace the haunted letter with a random one to break the curse!  
@@ -14,7 +15,7 @@ Replace with: K
 **Output**  
 Tkst mK  
   
-## **TL;DR Process**  
+## **TL;DR Solution**  
 ```python
 # import modules
 import sys
@@ -31,19 +32,19 @@ print(new_string)
   
 ## **Process**  
 We are provided an ip address and port.  
-I enter the details into a brower, and I'm directed to a webpage:  
-<img width="500px" src="/img/Replacement01.png">  
+I enter the details into a brower, and am directed to a webpage:  
+<img width="600px" src="img/Replacement01.png">  
  
   
 There is some placeholder code. I run it and see what appears:  
-<img width="500px" src="/img/Replacement02.png">  
+<img width="600px" src="img/Replacement02.png">  
   
-Looks like there is a paragraph of text randomly generated each time the code runs.  
+Looks like there is a line of text randomly generated each time the code runs.  
   
-After some code testing, I realised the input provided is not just the string, but the target letter to be replaced plus the letter used as replacement are also provided, and are also generated randomly each time
+After some code testing, I realised the input provided is not just the string, but the target letter to be replaced plus the letter used as replacement are also provided, and are also generated randomly each time.  
 This is actually written in the instructions, but I didn't understand until this point...  
 Ok so there are a total of 3 inputs to save.  
-These 3 values are separated by line breaks, so i googled how to save input that has multiple lines.  
+These 3 values are separated by line breaks, so I searched how to save input that has multiple lines.  
   
 A solution was to use this:  
 ```python
@@ -53,10 +54,10 @@ numbers = [int(x) for x in sys.stdin.read().split()]
 (source: https://stackoverflow.com/questions/44063122/how-to-take-multiple-multiline-input-variables-in-python)  
   
 But this code split the string into separate values which I did not want:  
-<img width="500px" src="/img/Replacement03.png">    
+<img width="600px" src="img/Replacement03.png">    
   
-So I googled again how to split python input, and found 'splitlines()'  
-<img width="500px" src="/img/Replacement04.png">  
+So I searched again how to split python input, and found 'splitlines()'  
+<img width="600px" src="img/Replacement04.png">  
   
 The input is saved the way I need it now.  
 Next step is to replace the letters as instructed.  
@@ -67,7 +68,7 @@ new_string = numbers[0].replace(numbers[1], numbers[2])
 ```
   
 As the final step, I just comment out any testing scripts, so only the answer itself is printed:  
-<img width="500px" src="/img/Replacement05.png">  
+<img width="600px" src="img/Replacement05.png">  
   
 Got the flag! :)  
   
