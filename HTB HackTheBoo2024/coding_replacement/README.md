@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-<img alt="Challenge thumbnail" width="300px" src="/img/Replacement01.png">  
-=======
 <img alt="Challenge thumbnail" width="300px" src="img/Replacement01.png">  
 
->>>>>>> c7cba3f03824ab018d5c2b3ca22aa51dfe3f4eea
 ## **Challenge Name & Description**  
 Replacement  
 A cursed spell has altered a scroll, changing key letters. Replace the haunted letter with a random one to break the curse!  
@@ -36,23 +32,12 @@ print(new_string)
   
 ## **Process**  
 We are provided an ip address and port.  
-<<<<<<< HEAD
-I enter the details into a brower, and I'm directed to a webpage:  
-<img width="500px" src="/img/Replacement01.png">  
- 
-=======
 I enter the details into a brower, and am directed to a webpage:  
 <img width="600px" src="img/Replacement01.png">  
- 
->>>>>>> c7cba3f03824ab018d5c2b3ca22aa51dfe3f4eea
   
 There is some placeholder code. I run it and see what appears:  
-<<<<<<< HEAD
-<img width="500px" src="/img/Replacement02.png">  
-=======
 <img width="600px" src="img/Replacement02.png">  
->>>>>>> c7cba3f03824ab018d5c2b3ca22aa51dfe3f4eea
-  
+    
 Looks like there is a line of text randomly generated each time the code runs.  
   
 After some code testing, I realised the input provided is not just the string, but the target letter to be replaced plus the letter used as replacement are also provided, and are also generated randomly each time.  
@@ -68,20 +53,11 @@ numbers = [int(x) for x in sys.stdin.read().split()]
 (source: https://stackoverflow.com/questions/44063122/how-to-take-multiple-multiline-input-variables-in-python)  
   
 But this code split the string into separate values which I did not want:  
-<<<<<<< HEAD
-<img width="500px" src="/img/Replacement03.png">    
-=======
 <img width="600px" src="img/Replacement03.png">    
->>>>>>> c7cba3f03824ab018d5c2b3ca22aa51dfe3f4eea
   
-<<<<<<< HEAD
-So I googled again how to split python input, and found 'splitlines()'  
-<img width="500px" src="/img/Replacement04.png">  
-=======
 So I searched again how to split python input, and found 'splitlines()'  
 <img width="600px" src="img/Replacement04.png">  
->>>>>>> c7cba3f03824ab018d5c2b3ca22aa51dfe3f4eea
-  
+    
 The input is saved the way I need it now.  
 Next step is to replace the letters as instructed.  
 I looked up the python function to replace letters and found 'replace()'  
@@ -90,14 +66,9 @@ So I add the line:
 new_string = numbers[0].replace(numbers[1], numbers[2])
 ```
   
-<<<<<<< HEAD
-As the final step, I just comment out any testing scripts, so only the answer itself is printed:  
-<img width="500px" src="/img/Replacement05.png">  
-=======
 As the final step, I just comment out any testing scripts, so only the answer itself is printed:  
 <img width="600px" src="img/Replacement05.png">  
->>>>>>> c7cba3f03824ab018d5c2b3ca22aa51dfe3f4eea
-  
+    
 Got the flag! :)  
   
 **Flag** `HTB{g0tTa_r3pLacE_th3_sTR1nG!!_fa70f4e32a9130e4a62b1c550ac7d6c4}`  
